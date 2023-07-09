@@ -1,0 +1,73 @@
+.header{
+    background: #efebdb;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    .social{
+        padding-left: 145px;
+    }
+    .header-nav{
+        li{
+            cursor: pointer;
+            font-size: 12px;
+            padding: 5px 0 0 20px;
+            line-height: 12px;
+        
+            a{
+                font-size: 12px;
+                color: #6f6247;
+                font-weight: 400;
+            }
+            .lang{
+                color: black;
+                
+                width: 70px;
+                height: 20px;
+                display: block;
+                border-radius: 5px;
+                background: url("./image/btn_english.gif");
+            }
+
+            &:hover{
+                text-decoration: underline #6f6247;
+            }
+        }
+    }
+
+}
+
+.app{
+    a{
+        position: relative;
+        padding-left: 25px;
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background: url("./image/icon_lotte.png");
+        }
+    }
+}
+
+.fb{
+    a{
+        position: relative;
+        padding-left: 25px;
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background: url("./image/icon_fb.png");
+        }
+    }
+}
