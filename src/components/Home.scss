@@ -178,26 +178,22 @@
         transform: translateX(-665px);
     }
 
-    .control{
+
+    .btn-left{
+        left: 18px;
+        .fill-white{
+            transform: rotate(180deg);
+        }
+    }
+    .btn-right{
+        right: 18px;
+
+    }
+
+    .btn-left, .btn-right{
         position: absolute;
         top: 348px;
-        right: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        .btn-left{
-            margin-left: 18px;
-            .fill-white{
-                transform: rotate(180deg);
-            }
-        }
-        .btn-right{
-            margin-right: 18px;
-        }
-
-        .btn-left, .btn-right{
-            width: 80px;
-            height: 80px;
-        }
+        width: 80px;
+        height: 80px;
     }
 }
