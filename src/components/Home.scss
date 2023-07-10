@@ -1,0 +1,203 @@
+
+
+@keyframes sliderLeft {
+    0%{
+        transform: 0%;
+    }
+    100%{
+        transform: translateX(100%);    
+    }
+}
+.sl{
+    transform: translateX(0%);
+}
+
+.sl-active{
+    animation: sliderLeft 1s ease-in-out;
+}
+
+
+@keyframes sliderRight {
+    0%{
+        transform: 0%;
+    }
+    100%{
+        transform: translateX(-100%);    
+    }
+}
+.sr{
+    transform: translateX(0%);
+}
+
+.sr-active{
+    animation: sliderRight 1s ease-in-out;
+}
+
+
+.Home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px rgb(219, 219, 219);
+    .listFilm{
+        margin-top: 20px;
+        position: relative;
+        display: flex;
+        width: 1000px;
+        height: 645px;
+        transition: transform .5s ease;
+
+        .slider-left{
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            right: 335px;
+            width: 1114px;
+            img{
+                width:100%;
+            }
+
+        }
+
+        .boxOffice{
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 685px;
+            right: 335px;
+            width: 315px;
+            height: 645px;
+            .banner{
+                height: 121px;
+                background: #2a2e33;
+                img{
+                    padding: 53px 57px 27px 57px;
+        
+                }
+            }
+
+            .officeCont{
+                padding-top: 20px;
+                ul{
+                    li{
+                        overflow: hidden;
+                        height: 54px;
+                        padding: 11px 10px 0;
+                        // box-sizing: border-box;
+                        a{
+                            .grade1, .num, .title-film{
+                                margin-bottom: 5px;
+                            }
+                            .grade1{
+                                display: inline-block;
+                                // overflow: hidden;
+                                vertical-align: middle;
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 5px;
+                            }
+
+                            .num{
+                                display: inline-block;
+                                vertical-align: middle;
+                                height: 30px;
+                                line-height: 30px;
+                                padding-right: 5px;
+                                font-family: 'linlivertine';
+                                font-style: italic;
+                                font-weight: bold;
+                                font-size: 19px;
+                            }
+
+                            .title-film{
+                                display: inline-block;
+                                width: 126px;
+                                height: 17px;
+                                font-size: 14px;
+                                line-height: 17px;
+                                vertical-align: middle;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                font-weight: bold;
+                            }
+
+                        }
+                        .time{
+                            margin-bottom: 5px;
+                            float: right;
+                            display: inline-block;
+                            height: 30px;
+                            line-height: 30px;
+                            color: #666;
+                            font-size: 12px;
+                        }
+
+                        &:hover{
+                            background: url(../image/bg_main.png);
+                        }
+                    }
+                }
+                
+            }
+
+            .buyNow{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                background: #ee1c25;
+                color: #fff;
+                height: 64px;
+                line-height: 64px;
+                font-weight: bold;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+
+        .slider-right{
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 1020px;
+            width: 1114px;
+            img{
+                width:100%;
+            }
+        }
+        
+
+    }
+    .left{
+        transform: translateX(0);
+    }
+
+    .right{
+        transform: translateX(-665px);
+    }
+
+    .control{
+        position: absolute;
+        top: 348px;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .btn-left{
+            margin-left: 18px;
+            .fill-white{
+                transform: rotate(180deg);
+            }
+        }
+        .btn-right{
+            margin-right: 18px;
+        }
+
+        .btn-left, .btn-right{
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
